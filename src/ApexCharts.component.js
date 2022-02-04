@@ -81,6 +81,7 @@ export default {
 
       const config = this.extend(this.options, newOptions);
       this.chart = new ApexCharts(this.$el, config);
+      console.log(this.chart.dataURI(config));
       return this.chart.render();
     },
     isObject(item) {
